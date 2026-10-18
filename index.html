@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="婧音宝盒技术支持：本地音乐、WebDAV、对象存储、歌词、离线播放与 CarPlay 使用帮助。">
+  <title>婧音宝盒 · 技术支持</title>
+  <style>
+    :root{color-scheme:light;--ink:#1c2923;--muted:#59685f;--green:#315f4c;--line:#dce5dc;--paper:#fff;--bg:#f5f7f2}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:var(--green);text-underline-offset:4px}a:hover{text-decoration-thickness:2px}a:focus-visible,summary:focus-visible{outline:3px solid #668f38;outline-offset:5px}
+    .wrap{max-width:1020px;margin:auto;padding:0 28px}header{padding:28px 0;border-bottom:1px solid var(--line)}
+    .bar{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:13px;font-weight:700;font-size:20px}
+    .record{width:43px;height:43px;border-radius:50%;background:conic-gradient(#121b17,#535e56 35deg,#151c18 65deg,#111814 180deg,#69736c 210deg,#111814 245deg);position:relative;box-shadow:inset 0 0 0 7px #ffffff12}
+    .record:after{content:"";position:absolute;inset:16px;border-radius:50%;background:#c6dbc1;border:3px solid #eef3e9}
+    nav{display:flex;gap:22px;font-size:14px}.hero{padding:65px 0 38px}.eyebrow{color:var(--green);font-size:13px;font-weight:700;letter-spacing:.12em}
+    h1{font-size:clamp(32px,5vw,48px);line-height:1.3;letter-spacing:-.035em;margin:12px 0 20px}h2{font-size:22px;margin:0 0 14px}h3{font-size:17px;margin:0 0 8px}
+    p{margin:0 0 15px}.lead{max-width:690px;font-size:18px;color:var(--muted)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:22px 0 44px}
+    .card{border:1px solid var(--line);border-radius:20px;background:var(--paper);padding:28px}.card.wide{grid-column:1/-1}.card p:last-child{margin-bottom:0}
+    .button{display:inline-block;background:var(--green);color:white;padding:11px 22px;border-radius:10px;text-decoration:none;margin:5px 0 13px;font-weight:600;min-height:44px}
+    .small{font-size:14px;color:var(--muted)}.email{overflow-wrap:anywhere}.list{padding-left:22px;margin:8px 0 0}.list li{margin:6px 0}
+    .warning{background:#fbf4e7;border:1px solid #ead7b0;border-radius:12px;padding:16px 20px;color:#664815;font-size:14px;margin-top:17px}
+    details{border-top:1px solid var(--line);padding:16px 0}details:last-child{padding-bottom:0}summary{cursor:pointer;font-weight:600;padding-right:12px;min-height:32px}details p{margin:12px 0 0;color:var(--muted)}
+    footer{padding:26px 0 35px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}footer .bar{align-items:flex-start}
+    @media(max-width:640px){.wrap{padding:0 20px}header{padding:20px 0}.hero{padding:40px 0 20px}.grid{grid-template-columns:1fr;gap:15px}.card{padding:22px}.card.wide{grid-column:auto}.lead{font-size:16px}nav{gap:16px}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap bar"><div class="brand"><span class="record" aria-hidden="true"></span>婧音宝盒</div><nav aria-label="网站导航"><a href="#help">使用帮助</a><a href="privacy.html">隐私政策</a></nav></div></header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="title"><div class="eyebrow">JINGYIN · SUPPORT</div><h1 id="title">使用帮助与技术支持</h1><p class="lead">管理自己的本地与云端音乐。如果连接、播放或曲库整理遇到问题，可以先查看常见问题，或通过下方邮箱联系开发者。</p></section>
+    <div class="grid">
+      <section class="card" aria-labelledby="contact"><h2 id="contact">联系开发者</h2><p>功能咨询、故障反馈与隐私相关请求，均可通过电子邮件联系我们。</p><a class="button" href="mailto:768690360@qq.com?subject=%E5%A9%A7%E9%9F%B3%E5%AE%9D%E7%9B%92%E4%BD%BF%E7%94%A8%E5%8F%8D%E9%A6%88">发送反馈邮件</a><p class="email"><a href="mailto:768690360@qq.com">768690360@qq.com</a></p><p class="small">开发者：江伟 张。邮件按钮需要设备配置邮件客户端，也可以复制邮箱后自行发送。</p></section>
+      <section class="card"><h2>反馈时建议提供</h2><ul class="list"><li>App 版本、iOS 版本与设备型号。</li><li>发生问题的步骤、预期结果与实际结果。</li><li>脱敏后的错误提示或截图。</li><li>涉及云端服务时，提供服务类型即可。</li></ul><div class="warning">请勿发送密码、访问密钥、API Key、私钥、签名证书、完整临时下载链接或含凭据的日志。截图中的个人信息也请先遮盖。</div></section>
+      <section class="card wide" id="help"><h2>常见问题</h2>
+        <details><summary>婧音宝盒是否提供音乐资源？</summary><p>不提供内置音乐曲库、盗版资源或音乐获取渠道。请导入或连接自己拥有、或已经获得使用授权的音频。你需要自行遵守音频及服务提供方的使用规则。</p></details>
+        <details><summary>如何使用 WebDAV 或对象存储？</summary><p>在 App 的资源页面添加连接，选择对应服务类型，按照表单填写服务地址及必要的认证信息。对象存储还需要正确的区域、存储桶和访问权限。优先使用 HTTPS，并查看表单下方的使用教程；连接失败时先核对地址、目录范围和权限。</p></details>
+        <details><summary>联网歌词如何开启？</summary><p>在设置中添加自定义歌词 API 的 HTTPS 基础地址，然后开启联网匹配。支持的接口协议包括 LrcShare、LrcAPI / Lrc.cx 和 LRCLIB。官方 LrcShare 接口使用 App 授权，无需用户填写 API Key。歌词服务由第三方提供，可能因限流、维护或内容匹配情况而暂不可用；请克制使用并遵守服务方规则。</p></details>
+        <details><summary>没有网络时可以播放吗？</summary><p>已在本机的音频，以及事先成功保存的离线歌曲，可以在无网络时使用。仅扫描出云端曲目、缓存封面或缓存歌词，不等于已经保存完整音频。</p></details>
+        <details><summary>CarPlay 有哪些使用条件？</summary><p>需要支持 CarPlay 的 iPhone 和车载设备，并安装包含 CarPlay 能力的正式 App。请先在手机完成音乐资源配置。若连接异常，请在停车后安全操作，并反馈设备型号、App 版本和具体发生步骤。</p></details>
+        <details><summary>整理备份是否包含歌曲和连接密码？</summary><p>整理备份用于保存歌单、喜欢等曲库整理信息，不包含音频文件或连接密码、访问密钥，也不能替代完整的设备备份。请妥善保管备份文件，避免在未备份前卸载 App 或删除本地音频。</p></details>
+        <details><summary>如何处理隐私或删除请求？</summary><p>本机资料可通过 App 中的曲库、连接和缓存管理功能分别处理。涉及支持邮件、个人信息或其他隐私问题，请发送邮件至上方邮箱。云服务端的数据或授权，需要在相应服务商处管理。详情见<a href="privacy.html">隐私政策</a>。</p></details>
+      </section>
+    </div>
+  </main>
+  <footer><div class="wrap bar"><span>© 2026 江伟 张 · 婧音宝盒</span><span><a href="privacy.html">隐私政策</a> · 最后更新：2026-10-18</span></div></footer>
+</body>
+</html>
